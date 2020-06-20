@@ -25,7 +25,8 @@ RUN apt-get install -y \
     cmake \
     python3 \
     wget \
-    curl
+    curl \
+    parallel
 
 RUN wget https://apt.llvm.org/llvm.sh && \
     chmod +x llvm.sh && \
