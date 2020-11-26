@@ -28,6 +28,7 @@ RUN apt-get install -y \
     cmake \
     python2.7 \
     python3 \
+    python3-distutils \
     wget \
     curl \
     parallel
