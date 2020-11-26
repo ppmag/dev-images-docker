@@ -37,7 +37,7 @@ RUN ln -s /usr/bin/python2.7 /usr/bin/python
 
 RUN wget https://apt.llvm.org/llvm.sh && \
     chmod +x llvm.sh && \
-    ./llvm.sh 10 	
+    ./llvm.sh 10
 
 # C++ dependencies
 RUN apt-get install -y libsodium23 libsodium-dev \
@@ -66,4 +66,4 @@ RUN cd /root && \
 # Install latest Chrome
 RUN curl -LO https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \
     apt-get install -y ./google-chrome-stable_current_amd64.deb && \
-    rm google-chrome-stable_current_amd64.deb 
+    rm google-chrome-stable_current_amd64.deb
